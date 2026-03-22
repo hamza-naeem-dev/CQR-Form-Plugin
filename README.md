@@ -1,67 +1,76 @@
-# CQR-Form-Plugin
-Custom Quote Request (CQR) Plugin
-Overview
+# 📩 WordPress Quote Request Plugin
 
-Custom Quote Request (CQR) is a self-developed WordPress plugin built using object-oriented PHP principles. It allows users to submit quote requests through a secure frontend form while storing submissions in the WordPress admin panel using Custom Post Types.
+A custom **WordPress Quote Request Plugin** that allows users to submit quote requests through a frontend form. The plugin securely processes user input and stores submissions using Custom Post Types.
 
-This project was developed to strengthen backend WordPress development skills including plugin architecture, secure form handling, and WordPress Hooks API.
+---
 
-Features
+# 🚀 Features
 
-Shortcode-based frontend form
+- Frontend quote request form using shortcode  
+- Secure form handling with nonce verification  
+- Input validation and sanitization  
+- Custom Post Type (CPT) for storing quote requests  
+- Email storage and structured data handling  
+- Dynamic display of submitted quotes using WP_Query  
 
-Secure form handling using WordPress nonces (CSRF protection)
+---
 
-Input sanitization and validation
+# 🛠 Technologies Used
 
-Custom Post Type registration for storing submissions
+### Backend
+- PHP  
+- WordPress Plugin API  
+- Custom Post Types (CPT)  
+- WP_Query  
 
-Email notification using wp_mail()
+### Frontend
+- HTML  
+- CSS (Bootstrap)  
 
-Proper redirect handling to prevent duplicate submissions
+---
 
-Activation and deactivation hooks implemented
+# 📸 Screenshots
 
-Technologies Used
+![Form](https://github.com/hamza-naeem-dev/WordPress-Quote-Request-Plugin/blob/main/assets/CQR%20Form.png)  
+![Display](https://github.com/hamza-naeem-dev/WordPress-Quote-Request-Plugin/blob/main/assets/CQR%20List.png)
 
-PHP (OOP principles)
+---
 
-WordPress Plugin API
+# 📦 Installation
 
-WordPress Hooks (Actions & Filters)
+1. Download or clone the repository:
+   ```bash
+   git clone https://github.com/hamza-naeem-dev/WordPress-Quote-Request-Plugin.git
 
-Custom Post Types
+Move the plugin folder to:
 
-HTML5
+wp-content/plugins/
+Activate the plugin from WordPress admin panel
+🧩 Usage
+Display Quote Request Form
+[cqr_quote_form]
+Display Submitted Requests
+[cqr_display_quotes]
+⚙️ How It Works
+User submits the quote request form
+Data is validated and sanitized
+A new post is created using Custom Post Type
+Data is stored securely in WordPress database
+Submissions are displayed dynamically using WP_Query
+🧠 Learning Highlights
+Secure form handling using WordPress nonces
+Working with Custom Post Types
+Using WP_Query to fetch dynamic data
+Structuring WordPress plugins using OOP
+⚠️ Future Improvements
+Add email notifications using wp_mail()
+Add AJAX form submission
+Improve UI design
+Add admin dashboard filters
+📌 Author
 
-Bootstrap (if added)
+Hamza Naeem
 
-JavaScript (form enhancements)
+📄 License
 
-Git
-
-Installation
-
-Clone or download the repository.
-
-Place the plugin folder inside wp-content/plugins/.
-
-Activate the plugin from WordPress admin panel.
-
-Use shortcode: [cqr_quote_form]
-
-Learning Objectives
-
-This plugin was built to practice:
-
-WordPress plugin structure and architecture
-
-Secure form handling
-
-Nonce verification
-
-Input sanitization
-
-Custom Post Type integration
-
-Debugging and redirect flow control
+GPL2
